@@ -35,7 +35,7 @@
 			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
-			<SceneBackgroundColor/>
+			<SceneBackgroundColor>-1140850689</SceneBackgroundColor>
 			<SceneSkybox>null</SceneSkybox>
 			<AgentProperties>
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
@@ -71,7 +71,7 @@
 					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
 					<RowsCountCode><![CDATA[100]]></RowsCountCode>
 					<NeigborhoodType>EUCLIDIAN</NeigborhoodType>
-					<LayoutType>RANDOM</LayoutType>
+					<LayoutType>USER_DEF</LayoutType>
 					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
 					<NetworkType>USER_DEF</NetworkType>
 					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
@@ -96,7 +96,7 @@
 			<ScaleRuler>
 				<Id>1716953268617</Id>
 				<Name><![CDATA[scale]]></Name>
-				<X>0</X><Y>-150</Y>
+				<X>460</X><Y>-200</Y>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>false</PresentationFlag>
 				<ShowLabel>false</ShowLabel>
@@ -112,13 +112,43 @@
 			<CurrentLevel>1716953268621</CurrentLevel>
 			<ConnectionsId>1716953268615</ConnectionsId>
 			<Variables>
-				<Variable Class="Parameter">
-					<Id>1717189860132</Id>
-					<Name><![CDATA[n_players]]></Name>
-					<X>155</X><Y>710</Y>
+				<Variable Class="PlainVariable">
+					<Id>1725289361874</Id>
+					<Name><![CDATA[swiss_text]]></Name>
+					<X>410</X><Y>-110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[String]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1725289399653</Id>
+					<Name><![CDATA[top_text]]></Name>
+					<X>410</X><Y>-80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[String]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1717189860132</Id>
+					<Name><![CDATA[n_players]]></Name>
+					<X>260</X><Y>-170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[int]]></Type>
@@ -139,10 +169,10 @@
 				<Variable Class="Parameter">
 					<Id>1717253164027</Id>
 					<Name><![CDATA[top]]></Name>
-					<X>155</X><Y>735</Y>
+					<X>260</X><Y>-110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[int]]></Type>
@@ -163,10 +193,10 @@
 				<Variable Class="Parameter">
 					<Id>1717365779604</Id>
 					<Name><![CDATA[swiss_rounds]]></Name>
-					<X>155</X><Y>760</Y>
+					<X>260</X><Y>-140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[int]]></Type>
@@ -187,10 +217,10 @@
 				<Variable Class="Parameter">
 					<Id>1722011372605</Id>
 					<Name><![CDATA[top_decks]]></Name>
-					<X>550</X><Y>650</Y>
+					<X>260</X><Y>-80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[Object[]]]></Type>
@@ -201,6 +231,79 @@
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1722011372603</Id>
+							<Label><![CDATA[top_decks]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1724923158485</Id>
+					<Name><![CDATA[externalMatchup]]></Name>
+					<X>260</X><Y>-230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[ExcelFile]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1724923158483</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1724923161819</Id>
+					<Name><![CDATA[externalMetashare]]></Name>
+					<X>260</X><Y>-200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[ExcelFile]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1724923161817</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1724923164128</Id>
+					<Name><![CDATA[dist]]></Name>
+					<X>260</X><Y>-260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[CustomDistributionDiscrete]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[new CustomDistributionDiscrete(new double[] {1.0, 2.0}, new double[] {0.5, 0.5})]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1724923164126</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -209,82 +312,11 @@
 					</Properties>                 
 				</Variable>
 			</Variables>
-			<CustomDistributions>
-				<CustomDistribution>
-					<Id>1717258032045</Id>
-					<Name><![CDATA[customDistribution]]></Name>
-					<X>200</X><Y>-60</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Type>DISCRETE</Type>
-					<DefinitionType>FREQUENCY_TABLE</DefinitionType>
-					<IntegerValues>false</IntegerValues>
-					<Static>false</Static>
-					<LoadFromDatabase><![CDATA[true]]></LoadFromDatabase>
-					<RangesQuery>
-					<TableReference>
-					</TableReference>
-						<StartColumnReference>
-						</StartColumnReference>
-						<EndColumnReference>
-						</EndColumnReference>
-						<WeightColumnReference>
-						</WeightColumnReference>
-					</RangesQuery>
-					<FrequencyQuery>
-					<TableReference>
-						<PackageName><![CDATA[mtg_tournament]]></PackageName>
-						<ClassName><![CDATA[foglio1]]></ClassName>
-					</TableReference>
-						<ValueColumnReference>
-							<PackageName><![CDATA[mtg_tournament]]></PackageName>
-							<ClassName><![CDATA[foglio1]]></ClassName>
-							<ItemName><![CDATA[id]]></ItemName>
-						</ValueColumnReference>
-						<WeightColumnReference>
-							<PackageName><![CDATA[mtg_tournament]]></PackageName>
-							<ClassName><![CDATA[foglio1]]></ClassName>
-							<ItemName><![CDATA[presence]]></ItemName>
-						</WeightColumnReference>
-					</FrequencyQuery>
-					<SampleQuery>
-					<TableReference>
-					</TableReference>
-						<ValueColumnReference>
-						</ValueColumnReference>
-					</SampleQuery>
-					<OptionQuery>
-					<TableReference>
-					</TableReference>
-						<OptionColumnReference>
-						</OptionColumnReference>
-						<WeightColumnReference>
-						</WeightColumnReference>
-					</OptionQuery>					
-					<Argument><![CDATA[1.0]]></Argument>
-					<Argument><![CDATA[2.0]]></Argument>
-					<Argument><![CDATA[3.0]]></Argument>
-					<Argument><![CDATA[4.0]]></Argument>
-					<Argument><![CDATA[5.0]]></Argument>
-					<Argument><![CDATA[6.0]]></Argument>
-					<Value><![CDATA[15.0]]></Value>
-					<Value><![CDATA[24.0]]></Value>
-					<Value><![CDATA[15.0]]></Value>
-					<Value><![CDATA[17.0]]></Value>
-					<Value><![CDATA[15.0]]></Value>
-					<Value><![CDATA[14.0]]></Value>					
-					<OptionListID><![CDATA[0]]></OptionListID>
-					<OptionValues>				
-					</OptionValues>				
-				</CustomDistribution>		
-			</CustomDistributions>
 			<Connectivity>
 				<TextFile>
 					<Id>1718234772201</Id>
 					<Name><![CDATA[output]]></Name>
-					<X>160</X><Y>790</Y>
+					<X>460</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -299,47 +331,15 @@
 					<CharsetName>null</CharsetName>
 					<Separators></Separators>
 				</TextFile>
-				<ExcelFile>
-					<Id>1717257061949</Id>
-					<Name><![CDATA[winrate]]></Name>
-					<X>155</X><Y>640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ResourceReference>
-						<PackageName><![CDATA[mtg_tournament]]></PackageName>
-						<ClassName><![CDATA[matchup.xlsx]]></ClassName>
-					</ResourceReference>
-					<SaveInSnapshot>false</SaveInSnapshot>
-					<LoadOnStartup>true</LoadOnStartup>
-					<SaveOnDispose>true</SaveOnDispose>
-				</ExcelFile>
-				<ExcelFile>
-					<Id>1717257178591</Id>
-					<Name><![CDATA[metashare]]></Name>
-					<X>155</X><Y>680</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ResourceReference>
-						<PackageName><![CDATA[mtg_tournament]]></PackageName>
-						<ClassName><![CDATA[metashare.xlsx]]></ClassName>
-					</ResourceReference>
-					<SaveInSnapshot>false</SaveInSnapshot>
-					<LoadOnStartup>true</LoadOnStartup>
-					<SaveOnDispose>true</SaveOnDispose>
-				</ExcelFile>
 			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1716953268615</Id>
 					<Name><![CDATA[connections]]></Name>
-					<X>50</X><Y>-50</Y>
-					<Label><X>15</X><Y>0</Y></Label>
+					<X>50</X><Y>-250</Y>
+					<Label><X>20</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<HandleReceiveInConnections>false</HandleReceiveInConnections>
 					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
@@ -358,10 +358,10 @@
 				<EmbeddedObject>
 					<Id>1716954875989</Id>
 					<Name><![CDATA[tables]]></Name>
-					<X>210</X><Y>-115</Y>
+					<X>60</X><Y>-190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1716954875991</PresentationId>
 					<ActiveObjectClass>
@@ -420,10 +420,10 @@
 				<EmbeddedObject>
 					<Id>1717076940809</Id>
 					<Name><![CDATA[controller]]></Name>
-					<X>210</X><Y>-140</Y>
+					<X>60</X><Y>-220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1717076940811</PresentationId>
 					<ActiveObjectClass>
@@ -488,10 +488,10 @@
 				<EmbeddedObject>
 					<Id>1717320288930</Id>
 					<Name><![CDATA[players]]></Name>
-					<X>210</X><Y>-90</Y>
+					<X>60</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<PresentationId>1717320288932</PresentationId>
 					<ActiveObjectClass>
@@ -509,7 +509,7 @@
 						<Parameter>
 							<Name><![CDATA[deck]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[(int) customDistribution()]]></Code>
+								<Code><![CDATA[dist.get(new Random()).intValue()]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -519,15 +519,15 @@
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
+						<Code><![CDATA[500 + 1640]]></Code>
 					</XCode>
 					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
+						<Code><![CDATA[1000]]></Code>
 					</YCode>
 					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
+						<Code><![CDATA[1]]></Code>
 					</ZCode>
 					<ColumnCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
@@ -566,135 +566,17 @@
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<Z>0</Z>
-					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+					<LevelVisibility>ALWAYS_SHOW</LevelVisibility>
 
 			<Presentation>
-				<Control Type="Slider">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1717252539441</Id>
-					<Name><![CDATA[slider_players]]></Name>
-					<X>20</X><Y>695</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="25">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
-						<Orientation>HORIZONTAL</Orientation>
-						<MinValue><![CDATA[2]]></MinValue>
-						<MaxValue><![CDATA[400]]></MaxValue>
-						<Step><![CDATA[2]]></Step>
-						<LinkTo>false</LinkTo>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="FileChooser">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1717252707875</Id>
-					<Name><![CDATA[fileChooser]]></Name>
-					<X>20</X><Y>670</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="20">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<FillColor/>
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<Title><![CDATA[winRate]]></Title>
-						<Type>UPLOAD</Type>
-						<Filters>.xlsx, .xls</Filters>
-						<FileName>file.txt</FileName>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="Button">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1717252719855</Id>
-					<Name><![CDATA[start]]></Name>
-					<X>20</X><Y>770</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="25">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<LabelText><![CDATA[button]]></LabelText>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="ComboBox">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1717252771281</Id>
-					<Name><![CDATA[combobox]]></Name>
-					<X>20</X><Y>735</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="20">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<FillColor/>
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<DefaultValueCode><![CDATA["top8"]]></DefaultValueCode>
-						<Editable>false</Editable>
-						<Button><![CDATA[top8]]></Button>
-						<Button><![CDATA[top16]]></Button>
-						<Button><![CDATA[top32]]></Button>
-						<Button><![CDATA[top64]]></Button>
-						<LinkTo>false</LinkTo>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="FileChooser">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1717254708661</Id>
-					<Name><![CDATA[fileChooser2]]></Name>
-					<X>20</X><Y>630</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="20">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<FillColor/>
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<Title><![CDATA[metaShare]]></Title>
-						<Type>UPLOAD</Type>
-						<Filters>.xlsx, .xls</Filters>
-						<FileName>file.txt</FileName>
-					</ExtendedProperties>
-				</Control>
     			<PieChart>
 					<Id>1718230415326</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>270</X><Y>630</Y>
+					<X>60</X><Y>2910</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
+					<ShowLabel>true</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
@@ -709,19 +591,19 @@
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>300</Width>
-					<Height>170</Height>
+					<Height>240</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>10</YOffset>
-						<Width>140</Width>
-						<Height>140</Height>
-						<BorderColor/>
+						<Width>180</Width>
+						<Height>170</Height>
+						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
 					</ChartArea>
 					<Legend>
-						<Place>EAST</Place>
+						<Place>SOUTH</Place>
 						<TextColor>-16777216</TextColor>
 						<Size>40</Size>
 					</Legend>
@@ -732,20 +614,645 @@
 					</Labels>
 					<ShowLegend>true</ShowLegend>
     			</PieChart>
+				<Rectangle>
+					<Id>1724837474973</Id>
+					<Name><![CDATA[hBar1]]></Name>
+					<X>1600</X><Y>0</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1000</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-14774017</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1724837907177</Id>
+					<Name><![CDATA[hCyan1]]></Name>
+					<X>1600</X><Y>0</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>50</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16711681</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1724837565293</Id>
+					<Name><![CDATA[text2D]]></Name>
+					<X>1610</X><Y>10</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea2D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[2D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724837638078</Id>
+					<Name><![CDATA[text3D]]></Name>
+					<X>1660</X><Y>10</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea3D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[3D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1724838134095</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>1240</X><Y>2840</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1000</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-14774017</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1724838134099</Id>
+					<Name><![CDATA[rectangle3]]></Name>
+					<X>1290</X><Y>2840</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>50</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16711681</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1724838134097</Id>
+					<Name><![CDATA[Mario2]]></Name>
+					<X>1300</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea3D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[3D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724838134101</Id>
+					<Name><![CDATA[Mario3]]></Name>
+					<X>1250</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea2D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[2D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1724844365651</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>40</X><Y>2840</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1000</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-14774017</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1724844365653</Id>
+					<Name><![CDATA[Mario4]]></Name>
+					<X>100</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea3D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[3D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1724844365655</Id>
+					<Name><![CDATA[rectangle5]]></Name>
+					<X>140</X><Y>2840</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16711681</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1724844365657</Id>
+					<Name><![CDATA[Mario5]]></Name>
+					<X>50</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewArea2D.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[2D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724844411520</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>150</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[Statistics]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724844528144</Id>
+					<Name><![CDATA[textStatistics]]></Name>
+					<X>1710</X><Y>10</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewAreaStatistics.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[Statistics]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724844576300</Id>
+					<Name><![CDATA[text2]]></Name>
+					<X>1350</X><Y>2850</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[viewAreaStatistics.navigateTo();]]></OnClickCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-1</Color>
+					<Text><![CDATA[Statistics]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1724856454617</Id>
+					<Name><![CDATA[floor]]></Name>
+					<X>1600</X><Y>50</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>0</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1000</Width>
+					<Height>550</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>floorCarpet</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1724849781435</Id>
+					<Name><![CDATA[rectangle6]]></Name>
+					<X>330</X><Y>2910</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>339.4377393943774</Width>
+					<Height>340</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1724850764482</Id>
+					<Name><![CDATA[First]]></Name>
+					<X>350</X><Y>2970</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[]]></Text>
+					<TextCode><![CDATA[swiss_text
+//(top_decks[0] == null) ? "Empty" : Arrays.stream(top_decks).map(x -> "- " + ((Pair<String, Color>)x).getFirst() + "\n").reduce("", (s1, s2) -> s1 + s2) ]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1724852831951</Id>
+					<Name><![CDATA[Ladder]]></Name>
+					<X>350</X><Y>2930</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-14774017</Color>
+					<Text><![CDATA[Swiss Ladder]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>28</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Control Type="Window3D">
+					<Id>1724854150927</Id>
+					<Name><![CDATA[window3d]]></Name>
+					<X>1260</X><Y>2900</Y>
+					<Width>960</Width>
+					<Height>520</Height>
+					<MakeDefaultViewArea>true</MakeDefaultViewArea>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<FollowCamera>false</FollowCamera>
+					<NavigationType>none</NavigationType>
+					<FarClippingDistance>2000</FarClippingDistance>
+					<Camera>camera</Camera>
+				</Control>
+				<Camera3D>
+					<Id>1724855399354</Id>
+					<Name><![CDATA[camera]]></Name>
+					<X>2100</X><Y>900</Y><Z>332.41</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>45.0</RotationX>
+					<RotationZ>-90.0</RotationZ>
+					<XCode><![CDATA[0]]></XCode>
+					<YCode><![CDATA[0]]></YCode>
+				</Camera3D>
+				<Rectangle>
+					<Id>1724935834541</Id>
+					<Name><![CDATA[rectangle8]]></Name>
+					<X>0</X><Y>-300</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>780</Width>
+					<Height>250</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-460545</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Light3D>
+					<Id>1725286127718</Id>
+					<Name><![CDATA[light]]></Name>
+					<X>1740</X><Y>140</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<LightPredefinedType>STREET_LIGHT</LightPredefinedType>
+					<LightType>point</LightType>
+					<AmbientColor>-12566464</AmbientColor>
+					<DiffuseColor>-4144960</DiffuseColor>
+					<SpecularColor>-1</SpecularColor>
+					<AttenuationConstantValue>0.0</AttenuationConstantValue>
+					<AttenuationLinearValue>0.005</AttenuationLinearValue>
+					<AttenuationQuadraticValue>0.0</AttenuationQuadraticValue>
+					<CutOffAngle>15.0</CutOffAngle>
+					<DropOffRate>0.0</DropOffRate>
+					<AngleX>10.0</AngleX>
+					<AngleZ>0.0</AngleZ>
+				</Light3D>
+				<Light3D>
+					<Id>1725286130294</Id>
+					<Name><![CDATA[light1]]></Name>
+					<X>2500</X><Y>140</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<LightPredefinedType>STREET_LIGHT</LightPredefinedType>
+					<LightType>point</LightType>
+					<AmbientColor>-12566464</AmbientColor>
+					<DiffuseColor>-4144960</DiffuseColor>
+					<SpecularColor>-1</SpecularColor>
+					<AttenuationConstantValue>0.0</AttenuationConstantValue>
+					<AttenuationLinearValue>0.005</AttenuationLinearValue>
+					<AttenuationQuadraticValue>0.0</AttenuationQuadraticValue>
+					<CutOffAngle>15.0</CutOffAngle>
+					<DropOffRate>0.0</DropOffRate>
+					<AngleX>45.0</AngleX>
+					<AngleZ>45.0</AngleZ>
+				</Light3D>
+				<Light3D>
+					<Id>1725286132830</Id>
+					<Name><![CDATA[light2]]></Name>
+					<X>2120</X><Y>320</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<LightPredefinedType>STREET_LIGHT</LightPredefinedType>
+					<LightType>point</LightType>
+					<AmbientColor>-12566464</AmbientColor>
+					<DiffuseColor>-4144960</DiffuseColor>
+					<SpecularColor>-1</SpecularColor>
+					<AttenuationConstantValue>0.0</AttenuationConstantValue>
+					<AttenuationLinearValue>0.005</AttenuationLinearValue>
+					<AttenuationQuadraticValue>0.0</AttenuationQuadraticValue>
+					<CutOffAngle>15.0</CutOffAngle>
+					<DropOffRate>0.0</DropOffRate>
+					<AngleX>45.0</AngleX>
+					<AngleZ>45.0</AngleZ>
+				</Light3D>
+				<Light3D>
+					<Id>1725286134970</Id>
+					<Name><![CDATA[light3]]></Name>
+					<X>1740</X><Y>520</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<LightPredefinedType>STREET_LIGHT</LightPredefinedType>
+					<LightType>point</LightType>
+					<AmbientColor>-12566464</AmbientColor>
+					<DiffuseColor>-4144960</DiffuseColor>
+					<SpecularColor>-1</SpecularColor>
+					<AttenuationConstantValue>0.0</AttenuationConstantValue>
+					<AttenuationLinearValue>0.005</AttenuationLinearValue>
+					<AttenuationQuadraticValue>0.0</AttenuationQuadraticValue>
+					<CutOffAngle>15.0</CutOffAngle>
+					<DropOffRate>0.0</DropOffRate>
+					<AngleX>45.0</AngleX>
+					<AngleZ>45.0</AngleZ>
+				</Light3D>
+				<Light3D>
+					<Id>1725286137463</Id>
+					<Name><![CDATA[light4]]></Name>
+					<X>2500</X><Y>540</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<LightPredefinedType>DAYLIGHT</LightPredefinedType>
+					<LightType>point</LightType>
+					<AmbientColor>-12566464</AmbientColor>
+					<DiffuseColor>-4144960</DiffuseColor>
+					<SpecularColor>-1</SpecularColor>
+					<AttenuationConstantValue>0.0</AttenuationConstantValue>
+					<AttenuationLinearValue>0.005</AttenuationLinearValue>
+					<AttenuationQuadraticValue>0.0</AttenuationQuadraticValue>
+					<CutOffAngle>15.0</CutOffAngle>
+					<DropOffRate>0.0</DropOffRate>
+					<AngleX>45.0</AngleX>
+					<AngleZ>45.0</AngleZ>
+				</Light3D>
+				<Rectangle>
+					<Id>1725289156348</Id>
+					<Name><![CDATA[rectangle7]]></Name>
+					<X>690</X><Y>2910</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>339.4377393943774</Width>
+					<Height>340</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1725289214132</Id>
+					<Name><![CDATA[Ladder2]]></Name>
+					<X>710</X><Y>2930</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-14774017</Color>
+					<Text><![CDATA[Final Ladder]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>28</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1725289558231</Id>
+					<Name><![CDATA[First1]]></Name>
+					<X>712</X><Y>2968</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[]]></Text>
+					<TextCode><![CDATA[top_text
+//(top_decks[0] == null) ? "Empty" : Arrays.stream(top_decks).map(x -> "- " + ((Pair<String, Color>)x).getFirst() + "\n").reduce("", (s1, s2) -> s1 + s2) ]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Presentation>
 
 				</Level>
 				<EmbeddedObjectPresentation>
 					<Id>1716954875991</Id>
 					<Name><![CDATA[tables_presentation]]></Name>
-					<X>50</X><Y>50</Y>
+					<X>2080</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>1</Z>
+					<Z>2</Z>
 					<Rotation>0.0</Rotation>
 					<DrawingMode>AGENT_CURRENT_POSITION</DrawingMode>
 					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
@@ -757,7 +1264,7 @@
 				<EmbeddedObjectPresentation>
 					<Id>1717076940811</Id>
 					<Name><![CDATA[controller_presentation]]></Name>
-					<X>-50</X><Y>-40</Y>
+					<X>2360</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -776,14 +1283,16 @@
 				<EmbeddedObjectPresentation>
 					<Id>1717320288932</Id>
 					<Name><![CDATA[players_presentation]]></Name>
-					<X>50</X><Y>90</Y>
+					<X>2080</X><Y>320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<XCode><![CDATA[floor.getX() + (floor.getWidth() * (((double)(n_players) - 4.0) / 1020) * 1.5 + 0.5)/2]]></XCode>
+					<YCode><![CDATA[floor.getY() + (floor.getHeight() * (((double)(n_players) - 4.0) / 1020) * 1.5 + 0.5)/2 + 50]]></YCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>-1</Z>
+					<Z>2</Z>
 					<Rotation>0.0</Rotation>
 					<DrawingMode>AGENT_CURRENT_POSITION</DrawingMode>
 					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
@@ -793,6 +1302,44 @@
 					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
 			</Presentation>
+			<Areas>
+				<Area>
+					<Id>1724837367889</Id>
+					<Name><![CDATA[viewArea3D]]></Name>
+					<X>1240</X><Y>2840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[]]></Title>
+					<Width>1000</Width>
+					<Height>600</Height>
+				</Area>
+				<Area>
+					<Id>1724844346383</Id>
+					<Name><![CDATA[viewAreaStatistics]]></Name>
+					<X>40</X><Y>2840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[]]></Title>
+					<Width>1000</Width>
+					<Height>600</Height>
+				</Area>
+				<Area>
+					<Id>1725010580197</Id>
+					<Name><![CDATA[viewArea2D]]></Name>
+					<X>1600</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[]]></Title>
+					<Width>1000</Width>
+					<Height>600</Height>
+				</Area>
+			</Areas>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
@@ -1119,9 +1666,9 @@ self.getAgent().moveToInTime(table.getX(), table.getY(), 2);]]></Action>
 					<Properties Target="1717075460138">
 						<Action><![CDATA[//TODO cambiare modo di assegnazione colori
 //Color[] colors = {red, pink, blue, purple, yellow, magenta, cadetBlue, darkOliveGreen, black, paleGreen, aquamarine, gray, gray, gray,gray,gray};
-Color color = new Color(Integer.parseInt(main.metashare.getCellStringValue(1, deck + 1, 4), 16));
+Color color = new Color(Integer.parseInt(main.externalMetashare.getCellStringValue(1, deck + 1, 4), 16));
 shapeBody.setFillColor(color);
-String deckname = main.winrate.getCellStringValue(1, 1, deck+1);
+String deckname = main.externalMatchup.getCellStringValue(1, 1, deck+1);
 int index = -1;
 for(int i = 0; i < main.chart.getCount(); i++){
 	if(main.chart.getTitle(i).equals(deckname)){
@@ -1217,12 +1764,12 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 				<Group>
 					<Id>1716953624286</Id>
 					<Name><![CDATA[person]]></Name>
-					<X>0</X><Y>0</Y>
+					<X>20</X><Y>6</Y>
 					<Label><X>-20</X><Y>20</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
@@ -1488,9 +2035,9 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 					<Properties Width="115" Height="50">
 						<EntryAction><![CDATA[int deck1 = p1.deck;
 int deck2 = p2.deck;
-double winrate = main.winrate.getCellNumericValue(1, deck1+1, deck2+1)/100.0;
-String d1 = main.winrate.getCellStringValue(1, 1, deck1+1);
-String d2 = main.winrate.getCellStringValue(1, 1, deck2+1);
+double winrate = main.externalMatchup.getCellNumericValue(1, deck1+1, deck2+1)/100.0;
+String d1 = main.externalMatchup.getCellStringValue(1, 1, deck1+1);
+String d2 = main.externalMatchup.getCellStringValue(1, 1, deck2+1);
 //System.out.println(d1+" vs "+d2+" winrate:"+winrate);
 //System.out.println("players "+p1+" "+p2+ "winrate: " + winrate);
 Random r = new Random();
@@ -1533,10 +2080,17 @@ if(x == 1){
 					<Properties Source="1717075782517" Target="1718295936197" Trigger="message">
 						<Action><![CDATA[p2 = msg;
 double actual_Y = p1.getPosition().getY();
-p1.moveToInTime( p1.getPosition().getX(), actual_Y - 10,1);
-p2.moveToInTime( p1.getPosition().getX(), actual_Y + 10,1);
+p1.moveToInTime( p1.getPosition().getX(), actual_Y - 10, 1);
+p2.moveToInTime( p1.getPosition().getX(), actual_Y + 10, 1);
 //System.out.println("player2 arrived " + msg)
-send("Ready", main.controller);]]></Action>
+send("Ready", main.controller);
+
+/*
+int tableShapeIndex = presentation.indexOf(this.table);
+int shapeIndex = presentation.indexOf(p1.shapeBody);
+presentation.remove(p1.shapeBody);
+presentation.insert(tableShapeIndex - 1, p1.shapeBody);
+*/]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -1658,8 +2212,8 @@ send("Ready", main.controller);]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1717075940687" Target="1717075782517" Trigger="timeout">
-						<Action><![CDATA[String d1 = main.winrate.getCellStringValue(1, 1, p1.deck+1);
-String d2 = main.winrate.getCellStringValue(1, 1, p2.deck+1);
+						<Action><![CDATA[String d1 = main.externalMatchup.getCellStringValue(1, 1, p1.deck+1);
+String d2 = main.externalMatchup.getCellStringValue(1, 1, p2.deck+1);
 
 //System.out.println(d1 + "vs" + d2 + "game ended: " + p1_win + "-" + p2_win);
 p1.game_won += p1_win;
@@ -1866,21 +2420,29 @@ p1 = msg;]]></Action>
 				<Figure3D>
 					<Id>1716954875963</Id>
 					<Name><![CDATA[table]]></Name>
-					<X>0</X><Y>0</Y>
+					<X>20</X><Y>6</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>0</X><Y>0</Y><Z>0</Z>
+					<X>20</X><Y>6</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[mtg_tournament]]></PackageName>
-						<ClassName><![CDATA[3d/table.dae]]></ClassName>
+						<ClassName><![CDATA[3d/table_2.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[material0]]></Name>
+							<OriginalColor>-10461088</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[material1]]></Name>
+							<OriginalColor>-3553847</OriginalColor>
+						</ColorMapping>
 					</ColorTable>
-					<AutoScale>true</AutoScale>
+					<AutoScale>false</AutoScale>
 					<Scale>1.0</Scale>
 					<Rotation>0.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
@@ -2116,7 +2678,7 @@ p1 = msg;]]></Action>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="50">
-						<EntryAction><![CDATA[int top = 8; 
+						<EntryAction><![CDATA[int top = min(8, main.top); 
 turn = 1;
 
 ArrayList<Player> players = new ArrayList();
@@ -2130,21 +2692,21 @@ main.output.println("***********************************************************
 for(int i = 0; i < main.top; i++){
 	Player p = players.get(i);
 	String out = ""+ (i+1) + ": "
-			+ main.winrate.getCellStringValue(1, 1, p.deck+1) 
-			+ " -> " + p.matches_won 
+			+ main.externalMatchup.getCellStringValue(1, 1, p.deck+1) 
+			+ ": " + p.matches_won 
 			+ "-" + p.matches_lost 
 			+ "-" + p.matches_draw;
+	main.swiss_text = main.swiss_text + out + "\n";
 	System.out.println(out);
 	main.output.println(out);
 }
 
+
 for(int i = 0; i< main.top; i++){
 	Player p = players.get(i);
-	Color color = new Color(Integer.parseInt(main.metashare.getCellStringValue(1, p.deck + 1, 4), 16));
-	Pair<String, Color> deckColor = new Pair<String, Color>(main.winrate.getCellStringValue(1, 1, p.deck+1), color);
-	main.top_decks[i] = deckColor;
-	//main.top_decks[i]= main.winrate.getCellStringValue(1, 1, p.deck+1) ;
-	//System.out.println(main.top_decks[i]);
+	Color color = new Color(Integer.parseInt(main.externalMetashare.getCellStringValue(1, p.deck + 1, 4), 16));
+	Pair<String, Color> deckAndColor = new Pair<String, Color>(main.externalMatchup.getCellStringValue(1, 1, p.deck+1), color);
+	main.top_decks[i] = deckAndColor;
 }
 
 //remove all players that are not in the top and all the useless tables
@@ -2157,19 +2719,10 @@ for(int i = top/2; i < s; i++){
 }
 
 //the pairings are:
-// t1: p1 vs p8, , 
-send(main.tables.get(0), players.get(0));
-send(main.tables.get(0), players.get(7));
-//t2: p4 vs p5
-send(main.tables.get(1), players.get(3));
-send(main.tables.get(1), players.get(4));
-// t3: p3 vs p6
-send(main.tables.get(2), players.get(2));
-send(main.tables.get(2), players.get(5));
-//t4: p2 vs p7
-send(main.tables.get(3), players.get(1));
-send(main.tables.get(3), players.get(6));
-]]></EntryAction>
+for(int i = 0; i<top/2; i++){
+	send(main.tables.get(i), players.get(i));
+	send(main.tables.get(i), players.get(top - i - 1));
+}]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -2243,7 +2796,7 @@ top_pairings = new ArrayList<Pair<Table, Player>>();]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
-						<Action><![CDATA[stopSimulation()]]></Action>
+						<Action><![CDATA[finishSimulation()]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
@@ -2351,19 +2904,57 @@ top_pairings = new ArrayList<Pair<Table, Player>>();]]></EntryAction>
 						<Point><X>35</X><Y>0</Y></Point>
 					</Points>
 					<Properties Target="1717077027492">
-						<Action><![CDATA[int players = main.n_players;
-int rows = (int) sqrt(players);
-int columns = (int)(players / rows) + 6;
-double h_spacing = 30, v_spacing = 50;
+						<Action><![CDATA[double c = (((double)(main.n_players) - 4.0) / 1020) * 1.5 + 0.5;
+
+main.viewArea2D.setHeight((int)(main.viewArea2D.getHeight() * c));
+main.viewArea2D.setWidth((int)(main.viewArea2D.getWidth() * c));
+
+main.floor.setHeight((int)(main.floor.getHeight() * c));
+main.floor.setWidth((int)(main.floor.getWidth() * c));
+
+main.hBar1.setHeight((int)(main.hBar1.getHeight() *c));
+main.hBar1.setWidth((int)(main.hBar1.getWidth() * c));
+
+main.text2D.setScale(c, c, 0.0);
+main.text3D.setScale(c, c, 0.0);
+main.textStatistics.setScale(c, c, 0.0);
+
+//repositioning of text2D, text3D and Statistics
+main.text2D.setX((main.text2D.getX() - main.viewArea2D.getX()) * c + main.viewArea2D.getX()); 
+main.text2D.setY((main.text2D.getY() - main.viewArea2D.getY()) * c + main.viewArea2D.getY());
+
+main.text3D.setX((main.text3D.getX() - (main.viewArea2D.getX() + main.hCyan1.getWidth())) * c + (main.viewArea2D.getX() + (int)(main.hCyan1.getWidth()* c)));
+main.text3D.setY((main.text3D.getY() - (main.viewArea2D.getY() + main.hCyan1.getHeight())) * c + (main.viewArea2D.getY() + (int)(main.hCyan1.getHeight()* c)));
+
+main.textStatistics.setX(main.text3D.getX() + (int)(main.hCyan1.getWidth() * c));
+main.textStatistics.setY(main.text3D.getY());
+
+main.hCyan1.setHeight((int)(main.hCyan1.getHeight() *c));
+main.hCyan1.setWidth((int)(main.hCyan1.getWidth() * c));
+
+main.floor.setY(main.hCyan1.getHeight());
+
+//main.camera.setPos(main.floor.getX() + main.floor.getWidth()/2, main.floor.getY() + main.floor.getHeight()/2 + 50, 332.41);
+
+main.viewArea2D.navigateTo();
+
+int players = main.n_players;
+double lambda = sqrt(main.tables.size() / 15.0);
+int columns = (int)(ceil(5.0 * lambda));
+int rows = (int)(main.tables.size() / columns);
+double h_spacing = 45, v_spacing = 50;
+int vOffset = (int)((main.floor.getHeight() - (v_spacing * rows)) / 2);
+int hOffset = (int)((main.floor.getWidth() - (h_spacing * columns)) / 2);
 
 for (int i = 0; i < main.tables.size(); i++) {
     int row = i / columns;
     int col = i % columns;
     
-    double x = col * h_spacing;
-    double y = row * v_spacing;
+    double x = hOffset + col * h_spacing + main.floor.getX();
+    double y = vOffset + row * v_spacing + main.floor.getY();
     
     main.tables.get(i).setXY(x, y);
+    
 }
 ]]></Action>
 					</Properties>	
@@ -2382,6 +2973,15 @@ for (int i = 0; i < main.tables.size(); i++) {
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1717077059976" Target="1717365918270" Trigger="message">
+						<Action><![CDATA[if(main.top == 16){
+	main.First.setScale(0.5, 0.5, 0.0);
+}
+
+if(main.top == 32){
+	main.First.setScale(0.4, 0.4, 0.0);
+	main.rectangle6.setHeight(main.rectangle6.getHeight() * 1.5);
+}
+]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -2447,7 +3047,14 @@ for (int i = 0; i < main.tables.size(); i++) {
 						<Action><![CDATA[n_results += 1;
 Pair<Table,Pair<Player,Player>> res = (Pair<Table,Pair<Player,Player>>)msg;
 Player tmp = res.getSecond().getSecond();
-System.out.println(main.metashare.getCellStringValue(1, tmp.deck + 1, 1));
+String tmp1 = main.externalMetashare.getCellStringValue(1, tmp.deck + 1, 1);
+if(min(8, main.top)/(pow(2,turn)) == 4){
+		main.top_text = "5th - 8th: " + tmp1 + "\n" + main.top_text;
+} else if(min(8, main.top)/(pow(2,turn)) == 2){
+	main.top_text = "3rd - 4th: " + tmp1 + "\n" + main.top_text;
+} else if(min(8, main.top)/(pow(2,turn)) == 1){
+	main.top_text = "2nd: " + tmp1 + "\n" + main.top_text;
+}
 main.remove_players(res.getSecond().getSecond()); //remove the loser
 Table t = res.getFirst();
 int i = t.getIndex();
@@ -2474,7 +3081,7 @@ else{
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[satisfies]]></FilterType>
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[n_results >= (int)((8/pow(2,turn))-1);]]></SatisfiesExpression>
+						<SatisfiesExpression><![CDATA[n_results >= (int)((min(8, main.top)/pow(2,turn) -1));]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="wait_results1" ParentStateId="1717366004735">
@@ -2494,7 +3101,14 @@ else{
 						<Action><![CDATA[n_results += 1;
 Pair<Table,Pair<Player,Player>> res = (Pair<Table,Pair<Player,Player>>)msg;
 Player tmp = res.getSecond().getSecond();
-System.out.println(main.metashare.getCellStringValue(1, tmp.deck + 1, 1));
+String tmp1 = main.externalMetashare.getCellStringValue(1, tmp.deck + 1, 1);
+if(min(8, main.top)/(pow(2,turn)) == 4){
+		main.top_text = "5th - 8th: " + tmp1 + "\n" + main.top_text;
+} else if(min(8, main.top)/(pow(2,turn)) == 2){
+	main.top_text = "3rd - 4th: " + tmp1 + "\n" + main.top_text;
+} else if(min(8, main.top)/(pow(2,turn)) == 1){
+	main.top_text = "2nd: " + tmp1 + "\n" + main.top_text;
+}
 main.remove_players(res.getSecond().getSecond()); //remove the loser
 Table t = res.getFirst();
 int i = t.getIndex();
@@ -2522,7 +3136,7 @@ else{
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[//the number of players for each turn is top/2*(turn)
 // for all turns except the first one
-n_results < (int)((8/pow(2,turn))-1);]]></SatisfiesExpression>
+n_results < (int)((min(8, main.top)/pow(2,turn) -1));]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
@@ -2722,7 +3336,7 @@ n_results = 0;]]></Action>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[satisfies]]></FilterType>
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
-						<SatisfiesExpression><![CDATA[n_results >= (int)((8/pow(2,turn))-1);]]></SatisfiesExpression>
+						<SatisfiesExpression><![CDATA[n_results >= (int)((min(8, main.top)/pow(2,turn) -1)); //prima era 8 al posto di main.top]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
@@ -2739,7 +3353,8 @@ n_results = 0;]]></Action>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1717425671964" Target="1724754808447" Trigger="condition">
-						<Action><![CDATA[System.out.println(main.metashare.getCellStringValue(1, main.players.get(0).deck + 1, 1));]]></Action>
+						<Action><![CDATA[String tmp1 = main.externalMetashare.getCellStringValue(1, main.players.get(0).deck + 1, 1);
+main.top_text = "Winner: " + tmp1 + "\n" + main.top_text;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -3249,8 +3864,111 @@ for(int table = 0; table< main.tables.size(); table++){
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1724922451277</Id>
+					<Name><![CDATA[distribution]]></Name>
+					<X>160</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[CustomDistributionDiscrete]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new CustomDistributionDiscrete(new double[] {1.0, 2.0}, new double[] {0.5, 0.5})]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1724924416767</Id>
+					<Name><![CDATA[n_top]]></Name>
+					<X>160</X><Y>-200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[4]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1724924429265</Id>
+					<Name><![CDATA[n_players]]></Name>
+					<X>160</X><Y>-150</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[4]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+			</Variables>
+			<Connectivity>
+				<ExcelFile>
+					<Id>1724922395319</Id>
+					<Name><![CDATA[matchup]]></Name>
+					<X>160</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ResourceReference>
+						<PackageName><![CDATA[mtg_tournament]]></PackageName>
+						<ClassName><![CDATA[matchup.xlsx]]></ClassName>
+					</ResourceReference>
+					<SaveInSnapshot>false</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+				<ExcelFile>
+					<Id>1724922405534</Id>
+					<Name><![CDATA[metashare]]></Name>
+					<X>160</X><Y>-250</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ResourceReference>
+						<PackageName><![CDATA[mtg_tournament]]></PackageName>
+						<ClassName><![CDATA[metashare.xlsx]]></ClassName>
+					</ResourceReference>
+					<SaveInSnapshot>false</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+			</Connectivity>
 
 			<Presentation>
+				<Rectangle>
+					<Id>1724962830315</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1000</Width>
+					<Height>600</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-5247250</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
 				<Text>
 					<Id>1720904801808</Id>
 					<Name><![CDATA[text]]></Name>
@@ -3272,28 +3990,203 @@ for(int table = 0; table< main.tables.size(); table++){
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Control Type="FileChooser">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1724922436254</Id>
+					<Name><![CDATA[matchupFileChooser]]></Name>
+					<X>50</X><Y>110</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="200" Height="20">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[matchup.setFileName(value);
+matchup.readFile();]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<Title><![CDATA[matchup]]></Title>
+						<Type>UPLOAD</Type>
+						<Filters>.xlsx, .xls</Filters>
+						<FileName>file.txt</FileName>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1724922438888</Id>
+					<Name><![CDATA[button]]></Name>
+					<X>100</X><Y>470</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="100" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[ArrayList<Double> id = new ArrayList<>();
+ArrayList<Double> probability = new ArrayList<>();
+
+index=1;
+while(metashare.cellExists(1,index+1,2)){
+    probability.add( metashare.getCellNumericValue(1, index+1, 2));
+    index++;
+}
+index=1;
+while(metashare.cellExists(1,index+1,3)){
+    id.add( metashare.getCellNumericValue(1, index+1, 3));
+    index++;
+}
+System.out.println(probability);
+System.out.println(id);
+
+distribution = new CustomDistributionDiscrete(
+    id.stream().mapToDouble(i -> i).toArray(),
+    probability.stream().mapToDouble(i -> i).toArray() );
+  
+run();
+getExperimentHost().setPresentable( getEngine().getRoot() );]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[button]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="FileChooser">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1724922440538</Id>
+					<Name><![CDATA[metashareFileChooser]]></Name>
+					<X>50</X><Y>160</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="200" Height="20">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[metashare.setFileName(value); //setFile( value, TextFile.READ );
+metashare.readFile();]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<Title><![CDATA[metashare]]></Title>
+						<Type>UPLOAD</Type>
+						<Filters>.xlsx, .xls</Filters>
+						<FileName>file.txt</FileName>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="ComboBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1724924682575</Id>
+					<Name><![CDATA[n_topBox]]></Name>
+					<X>50</X><Y>210</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="100" Height="20">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[if(n_players < n_top){
+	n_players = n_top;
+}]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="14" Style="1"/>
+						<Editable>false</Editable>
+						<Button><![CDATA[4]]></Button>
+						<Button><![CDATA[8]]></Button>
+						<Button><![CDATA[16]]></Button>
+						<Button><![CDATA[32]]></Button>
+						<LinkTo>true</LinkTo>
+						<Link>n_top</Link>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1724925006135</Id>
+					<Name><![CDATA[slider]]></Name>
+					<X>50</X><Y>260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="350" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[n_top]]></MinValue>
+						<MaxValue><![CDATA[1024]]></MaxValue>
+						<Step><![CDATA[2]]></Step>
+						<LinkTo>true</LinkTo>
+						<Link>n_players</Link>
+					</ExtendedProperties>
+				</Control>
 			</Presentation>
 
 			<Parameters>			
 				<Parameter>
 					<ParameterName><![CDATA[n_players]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[n_players]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[top]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[n_top]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[swiss_rounds]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[(int) Math.round(Math.log((double)n_players) / Math.log(2))]]></Code>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[top_decks]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[externalMatchup]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[matchup]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[externalMetashare]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[metashare]]></Code>
+					</ParameterValue>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[dist]]></ParameterName>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[distribution]]></Code>
+					</ParameterValue>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
-				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<EnableZoomAndPanning>false</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<Title><![CDATA[mtg_tournament : magic_online]]></Title>	
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
-				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<ShowDeveloperPanelOnStart>true</ShowDeveloperPanelOnStart>
 				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>
@@ -3303,7 +4196,7 @@ for(int table = 0; table< main.tables.size(); table++){
 				<FinalDate><![CDATA[1719619200000]]></FinalDate>	
 				<FinalTime><![CDATA[100.0]]></FinalTime>	
 			</ModelTimeProperties>
-			<BypassInitialScreen>true</BypassInitialScreen>
+			<BypassInitialScreen>false</BypassInitialScreen>
 		</SimulationExperiment>
 		<!--   =========  Parameter Variation Experiment   ========  -->
 		<ParamVariationExperiment ActiveObjectClassId="1716953268614">
@@ -3334,6 +4227,15 @@ for(int table = 0; table< main.tables.size(); table++){
 			<FreeformParamValue>	
 				<Id>1722011372605</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923158485</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923161819</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923164128</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1717189860132</Id>
 				<Type>FIXED</Type>
@@ -3348,6 +4250,18 @@ for(int table = 0; table< main.tables.size(); table++){
 			</RangeVariationParamValue>
 			<RangeVariationParamValue>	
 				<Id>1722011372605</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923158485</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923161819</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923164128</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
 			<ModelTimeProperties>
@@ -3402,25 +4316,6 @@ dictionary.forEach((key,value) -> {DataItem d = new DataItem();
 							meta_share.addDataItem(d,key.getFirst(),key.getSecond());
 							}
 			);
-
-
-/*
-int index = -1;
-for(int i = 0; i < main.chart.getCount(); i++){
-	if(main.chart.getTitle(i).equals(deckname)){
-		index = i;
-		break;
-	}
-}
-if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
-	DataItem d = new DataItem();
-	d.setValue(1);
-	main.chart.addDataItem(d, deckname, colors[deck-1]);
-} else {
-	double old_val = main.chart.get(index).getValue();
-	main.chart.get(index).setValue(old_val + 1);
-}
-*/
 ]]></AfterSimulationRunCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
@@ -3691,7 +4586,7 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
     			<PieChart>
 					<Id>1722013772513</Id>
 					<Name><![CDATA[meta_share]]></Name>
-					<X>80</X><Y>260</Y>
+					<X>50</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3759,6 +4654,15 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 			<FreeformParamValue>	
 				<Id>1722011372605</Id>
 			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923158485</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923161819</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1724923164128</Id>
+			</FreeformParamValue>
 			<RangeVariationParamValue>	
 				<Id>1717189860132</Id>
 				<Type>FIXED</Type>
@@ -3775,6 +4679,18 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 				<Id>1722011372605</Id>
 				<Type>FIXED</Type>
 			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923158485</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923161819</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1724923164128</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1716940800000]]></InitialDate>	
@@ -3783,7 +4699,7 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 				<FinalTime><![CDATA[2000.0]]></FinalTime>	
 			</ModelTimeProperties>
 			<PresentationProperties>
-				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<EnableZoomAndPanning>false</EnableZoomAndPanning>
 				<Title><![CDATA[mtg_tournament : MonteCarlo]]></Title>
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
 				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
@@ -3802,22 +4718,22 @@ if(index == -1){ // se non e' presente un elemento che rappresenta il mazzo
 	</Experiments>
 	<ModelResources>
 		<Resource>
-			<Path><![CDATA[3d/table.dae]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Path><![CDATA[matchup.xlsx]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
 			<Path><![CDATA[metashare.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
 			<Path><![CDATA[output.txt]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Path><![CDATA[3d/table_2.dae]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Path><![CDATA[matchup.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
